@@ -45,17 +45,19 @@
 
 
 
-                    <li>
-                       
-                        <a href=@Url.Action("Index","Login")><i class="fa fa-desktop "></i>Kho chứa <span class="badge">Included</span></a>
+                    <li id="hanghoa" class="active-link">
+                        <a href="#"><i class="fa fa-table "></i>Hàng hóa  <span class="badge">Included</span></a>
+                    </li>
+
+                    <li id="kho">
+
+                        <a href="#"><i class="fa fa-desktop "></i>Kho chứa <span class="badge">Included</span></a>
                     </li>
 
 
+                   
                     <li>
-                        <a href="ui.html"><i class="fa fa-table "></i>Hàng hóa  <span class="badge">Included</span></a>
-                    </li>
-                    <li>
-                        <a href="blank.html"><i class="fa fa-edit "></i>Phiếu nhập  <span class="badge">Included</span></a>
+                        <a href=""><i class="fa fa-edit "></i>Phiếu nhập  <span class="badge">Included</span></a>
                     </li>
 
 
@@ -65,8 +67,10 @@
                     <li>
                         <a href="#"><i class="fa fa-bar-chart-o"></i>Nhà cung cấp</a>
                     </li>
+                    <li id="user">
+                        <a href="#"><i class="fa fa-user"></i>Người dùng</a>
+                    </li>
 
-                   
                 </ul>
             </div>
 
@@ -100,10 +104,22 @@
     <script src="@Url.Content("~/Content/myTemplate")/js/bootstrap.min.js"></script>
     <!-- CUSTOM SCRIPTS -->
     <script src="@Url.Content("~/Content/myTemplate")/js/custom.js"></script>
+
+    <script src="~/Content/myTemplate/js/myjs.js"></script>
     <script>
-        $("li").click(function () {
+        $("#user").click(function () {
+            $(this).parent().children().removeClass("active-link");
             $(this).addClass("active-link");
+            $("#page-inner").load("@Url.Action("Index2","Login")");
+
+        });
+        $("#hanghoa").click(function () {
+            $(this).parent().children().removeClass("active-link");
+            $(this).addClass("active-link");
+            $("#page-inner").load("@Url.Action("IndexKhoHang", "HangHoa")");
+            
         })
+
     </script>
 </body>
 </html>

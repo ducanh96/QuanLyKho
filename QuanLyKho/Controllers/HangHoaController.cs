@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -7,21 +6,14 @@ using System.Web.Mvc;
 
 namespace QuanLyKho.Controllers
 {
-    public class LoginController : Controller
+    public class HangHoaController : Controller
     {
-        // GET: Login
+        // GET: HangHoa
         public ActionResult Index()
         {
-           
-            return PartialView();
+            return View();
         }
-
         public ActionResult IndexKhoHang()
-        {
-            return PartialView();
-        }
-
-        public ActionResult Index2()
         {
             return PartialView();
         }
