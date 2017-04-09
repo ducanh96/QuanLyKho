@@ -131,8 +131,19 @@
     <Content Include="App_Data\QuanLyKho_log.ldf">
       <DependentUpon>QuanLyKho.mdf</DependentUpon>
     </Content>
+    <Content Include="Content\bootstrap-theme.css" />
+    <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\myTemplate\css\bootstrap.css" />
+    <Content Include="Content\myTemplate\css\custom.css" />
+    <Content Include="Content\myTemplate\css\font-awesome.css" />
+    <Content Include="Content\myTemplate\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\myTemplate\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\myTemplate\img\logo.png" />
+    <Content Include="Content\myTemplate\js\bootstrap.min.js" />
+    <Content Include="Content\myTemplate\js\custom.js" />
+    <Content Include="Content\myTemplate\js\jquery-1.10.2.js" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -157,8 +168,19 @@
     <Content Include="Models\ModelDB\KhoModel.edmx.diagram">
       <DependentUpon>KhoModel.edmx</DependentUpon>
     </Content>
-    <Content Include="ClassDiagram1.cd" />
-    <Content Include="ClassDiagram2.cd" />
+    <Content Include="Content\myTemplate\css\bootstrap.css.map" />
+    <Content Include="Content\myTemplate\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\myTemplate\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\myTemplate\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\myTemplate\fonts\FontAwesome.otf" />
+    <Content Include="Content\myTemplate\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\myTemplate\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Content\myTemplate\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Content\myTemplate\fonts\glyphicons-halflings-regulard41d.eot" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\bootstrap-theme.min.css.map" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap.min.css.map" />
     <None Include="scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
@@ -249,7 +271,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Content\myTemplate\" />
     <Folder Include="Models\ModelManager\" />
   </ItemGroup>
   <ItemGroup>

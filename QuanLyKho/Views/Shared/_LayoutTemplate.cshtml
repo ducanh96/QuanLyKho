@@ -45,9 +45,9 @@
 
 
 
-                    <li class="active-link">
+                    <li>
                        
-                        <a href=@Url.Action("Index","Account")><i class="fa fa-desktop "></i>Kho chứa <span class="badge">Included</span></a>
+                        <a href=@Url.Action("Index","Login")><i class="fa fa-desktop "></i>Kho chứa <span class="badge">Included</span></a>
                     </li>
 
 
@@ -95,11 +95,15 @@
     <!-- /. WRAPPER  -->
     <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
-    <script src="@Url.Content("~/Content/myTemplate/")/js/jquery-1.10.2.js"></script>
+    <script src="~/Content/myTemplate/js/jquery-1.10.2.js"></script>
     <!-- BOOTSTRAP SCRIPTS -->
-    <script src="@Url.Content("~/Content/myTemplate/")/js/bootstrap.min.js"></script>
+    <script src="@Url.Content("~/Content/myTemplate")/js/bootstrap.min.js"></script>
     <!-- CUSTOM SCRIPTS -->
-    <script src="@Url.Content("~/Content/myTemplate/")/js/custom.js"></script>
-
+    <script src="@Url.Content("~/Content/myTemplate")/js/custom.js"></script>
+    <script>
+        $("li").click(function () {
+            $(this).addClass("active-link");
+        })
+    </script>
 </body>
 </html>

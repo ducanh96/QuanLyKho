@@ -1,11 +1,9 @@
-﻿@model List<QuanLyKho.Models.ModelDB.Table_User>
+﻿
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutTemplate.cshtml";
 }
-@{ 
-    int dem = 0;
-}
+
 
 <h2>Index</h2>
 <div class="col-lg-12 col-md-12">
@@ -20,16 +18,7 @@
             </tr>
         </thead>
         <tbody>
-            
-            @foreach (var item in Model)
-            {
-                <tr>
-                    <td>@(dem++)</td>
-                    <td>@item.UserName</td>
-                    <td>@item.UserPassword</td>          
-                </tr>
-
-            }
+          
 
         </tbody>
     </table>
