@@ -136,9 +136,10 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\myTemplate\css\bootstrap.css" />
+    <Content Include="Content\myTemplate\css\cssLayoutLogin.css" />
     <Content Include="Content\myTemplate\css\custom.css" />
     <Content Include="Content\myTemplate\css\font-awesome.css" />
-    <Content Include="Content\myTemplate\fonts\fontawesome-webfont.svg" />
+    <Content Include="App_Data\fontawesome-webfont.svg" />
     <Content Include="Content\myTemplate\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Content\myTemplate\img\logo.png" />
     <Content Include="Content\myTemplate\js\bootstrap.min.js" />
@@ -267,6 +268,8 @@
     <Content Include="Views\Login\index2.cshtml" />
     <Content Include="Views\HangHoa\Index.cshtml" />
     <Content Include="Views\HangHoa\IndexKhoHang.cshtml" />
+    <Content Include="Views\Shared\_LayoutLogin.cshtml" />
+    <Content Include="Views\Login\LoginUser.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

@@ -24,9 +24,11 @@ namespace QuanLyKho.Models.ModelDB
         public Nullable<int> Ma_Loai { get; set; }
         public Nullable<decimal> Don_Gia { get; set; }
         public Nullable<bool> IsActive { get; set; }
+        public Nullable<int> Nha_Cung_Cap_Id { get; set; }
     
         public virtual Loai_SP Loai_SP { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Phieu_Nhap_Hang_Hoa> Phieu_Nhap_Hang_Hoa { get; set; }
+        public virtual Nha_Cung_Cap Nha_Cung_Cap { get; set; }
     }
 }

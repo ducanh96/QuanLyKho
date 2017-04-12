@@ -17,13 +17,13 @@ namespace QuanLyKho.Models.ModelDB
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Nha_Cung_Cap()
         {
-            this.Loai_SP = new HashSet<Loai_SP>();
+            this.Hang_Hoa = new HashSet<Hang_Hoa>();
         }
     
         public int Nha_Cung_Cap_Id { get; set; }
         public string Ten_Nha_Cung_Cap { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Loai_SP> Loai_SP { get; set; }
+        public virtual ICollection<Hang_Hoa> Hang_Hoa { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace QuanLyKho.Controllers
         // GET: Login
         public ActionResult Index()
         {
-           
+
             return PartialView();
         }
 
@@ -25,5 +25,11 @@ namespace QuanLyKho.Controllers
         {
             return PartialView();
         }
+
+        public ActionResult LoginUser()
+        {
+            return View();
+        }
+
     }
 }
