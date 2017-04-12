@@ -19,7 +19,7 @@ namespace QuanLyKho.Models.ModelDB
         public Nullable<decimal> Don_Gia { get; set; }
         public Nullable<int> So_Luong { get; set; }
     
-        public virtual Phieu_Xuat Phieu_Xuat { get; set; }
         public virtual Kho_Chua Kho_Chua { get; set; }
+        public virtual Phieu_Xuat Phieu_Xuat { get; set; }
     }
 }

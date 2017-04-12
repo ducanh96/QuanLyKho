@@ -18,7 +18,6 @@ namespace QuanLyKho.Models.ModelDB
         public Loai_SP()
         {
             this.Hang_Hoa = new HashSet<Hang_Hoa>();
-            this.Nha_Cung_Cap = new HashSet<Nha_Cung_Cap>();
         }
     
         public int Loai_Sp_Id { get; set; }
@@ -26,7 +25,5 @@ namespace QuanLyKho.Models.ModelDB
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Hang_Hoa> Hang_Hoa { get; set; }
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Nha_Cung_Cap> Nha_Cung_Cap { get; set; }
     }
 }
